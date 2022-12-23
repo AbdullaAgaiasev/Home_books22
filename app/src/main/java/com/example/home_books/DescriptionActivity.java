@@ -26,7 +26,7 @@ public class DescriptionActivity extends AppCompatActivity {
         imageView=findViewById(R.id.book_tv2);
         Intent intent = getIntent();
 
-        imageView.setImageResource(intent.getIntExtra("desc",0));
         textView.setText(intent.getStringExtra("desc"));
+        imageView.setImageResource(intent.getIntExtra("desc",0));
     }
 }
